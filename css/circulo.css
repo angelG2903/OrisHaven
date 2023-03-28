@@ -1,0 +1,28 @@
+.mascotas{
+    border-radius: 100%;
+}
+
+.adopcion{
+    position: relative;
+    background-color:#F3F3F3;
+    padding: 20px;
+}
+
+input[type="file"]{
+    width: 250px;
+}
+
+.apartado{
+    margin: auto;
+    background-color: #F3F3F3;
+    border-radius: 25px;
+    box-shadow:  0 2px 3px rgba(0 0 0 / 0.15);
+}
+
+.sombra{
+    box-shadow:  0 2px 3px rgba(0 0 0 / 0.15);
+}
+
+.fondo{
+    background-color:#F3F3F3;
+}

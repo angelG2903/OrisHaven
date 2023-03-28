@@ -1,0 +1,148 @@
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+
+    background-color:#E4E4E4;
+    background-image:linear-gradient(to bottom, #ffffff 0%, #fffcfc 51%);
+
+    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    font-size:15px;
+    height:100vh;
+    margin:0px;
+    padding:0px;
+
+    /* Padding to avoid the "unsafe" areas behind notches in the screen */
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    width:100%;
+
+    background-attachment: fixed;
+}
+
+#header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #FFF;
+	/*setteable*/
+	display:none;
+}
+
+#logo {
+	height:100%;
+}
+
+#content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#footer {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    overflow: hidden;
+	/*setteable*/
+	display:none;
+}
+
+.main_menu {
+	padding-left:0px;
+	padding-right:0px;
+}
+
+.opt_menu {
+	padding-left:0px;
+	padding-right:0px;
+}
+
+.img_menu {
+    padding-top:5px;
+	overflow: hidden;
+	/*width:80%;*/
+}
+
+#menu {
+    position: fixed;
+    top: 0px;
+    width: 0%;
+    height: 100%;
+    z-index: 100;
+    overflow: hidden;
+    background-color: #FFF;
+    box-shadow: 1px 5px 10px #555;
+}
+
+#menu_trigger {
+    padding-top:10px;
+	/*setteable*/
+	display: none;
+}
+
+#close_btn_container {
+
+}
+
+#close_btn {
+    padding-top:10px;
+    padding-right:0px;
+}
+
+.close {
+    /*width:100%;*/
+}
+
+#cancel_img {
+	width:50%;
+}
+
+/*
+.popup_alert {
+	background-color: rgba(255,255,255,0.3);
+}
+
+.popup_sub_content {
+	background-color: rgba(255,255,255,0.3);
+}
+*/
+
+#loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255, 0);
+    overflow: hidden;
+    display: none;
+}
+
+#loader_gif {
+	width:35%;
+	margin-top:70%;
+    font-size: 1.8em;
+    color: blue;
+}
+
+.size_menu_icon {
+	height:40px;
+}
+
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+
+}
